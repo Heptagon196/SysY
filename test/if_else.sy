@@ -1,0 +1,22 @@
+extern void print(int);
+int main() {
+    int a, b, c;
+    int y[2][4][5], z[4], w;
+    a = 0;
+    b = 1;
+    if (a == 0)
+        if (b == 0)
+            c = 1;
+        else
+            c = 2;
+    print(c);
+    a = 1;
+    if (a == 0) {
+        if (b == 0)
+            c = 3;
+    }
+    else
+        c = 4;
+    print(c);
+    return 0;
+}

@@ -1,0 +1,19 @@
+extern void print(int);
+int x(int a[]) {
+    a[0] = 1;
+}
+int y(int a[][2]) {
+    a[0][0] = 2;
+}
+int main() {
+    int b[2][2][2] = {{{11, 12}, {13, 14}}};
+    print(b[0][0][0]);
+    print(b[0][0][1]);
+    print(b[0][1][0]);
+    print(b[0][1][1]);
+    x(b[0][0]);
+    print(b[0][0][b[0][0][0]]);
+    y(b[0]);
+    print(b[0][0][0]);
+    return 0;
+}

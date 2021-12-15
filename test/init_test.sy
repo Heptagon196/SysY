@@ -1,0 +1,12 @@
+extern void print(int);
+const int b[2][2] = {{1, 2}, {3, 4}};
+const int c = 3;
+int main() {
+    int a[1][2][2] = {{{1, 2}, {3, 4}}};
+    const int d = 123;
+    print(a[0][1][1]);
+    print(b[1][1]);
+    print(c);
+    print(d);
+    return 0;
+}
